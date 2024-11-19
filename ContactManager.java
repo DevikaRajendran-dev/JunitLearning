@@ -23,8 +23,8 @@ public class ContactManager implements ContactDetails {
     }
 
     @Override
-    public boolean deleteContact(String firstName) {
-        return c.remove(firstName) != null;
+    public boolean deleteContact(String fName) {
+        return c.remove(fName) != null;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class ContactManager implements ContactDetails {
         System.out.println("Phone: " + contact.getPhone());
         return true;
     }
-    private boolean isValidPhoneNumber(String number) {
+    public boolean isValidPhoneNumber(String number) {
         if (number == null || number.length() != 10) {
             return false;
         }
