@@ -42,9 +42,6 @@ public class ContactManager implements ContactDetails {
         if (contact == null) {
             throw new IllegalArgumentException("Contact not found");
         }
-        System.out.println("First Name: " + contact.getFirstName());
-        System.out.println("Last Name: " + contact.getLastName());
-        System.out.println("Phone: " + contact.getPhone());
         return true;
     }
     public boolean isValidPhoneNumber(String number) {
